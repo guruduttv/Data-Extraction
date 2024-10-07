@@ -30,7 +30,7 @@ class ExtractionRequest(BaseModel):
     fields: List[UserField]
 
 #Use of env file and to access the apikey
-API_KEY = os.getenv("ANTHROPIC_API_KEY")
+API_KEY = "Api-Key"
 
 client = instructor.from_anthropic(anthropic.Anthropic(api_key=API_KEY))
 
